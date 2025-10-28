@@ -28,12 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            btnClickThis = new Button();
+            lblHelloWorld = new Label();
+            SuspendLayout();
+            // 
+            // btnClickThis
+            // 
+            btnClickThis.Location = new Point(281, 127);
+            btnClickThis.Name = "btnClickThis";
+            btnClickThis.Size = new Size(94, 29);
+            btnClickThis.TabIndex = 0;
+            btnClickThis.Text = "Click This";
+            btnClickThis.UseVisualStyleBackColor = true;
+            btnClickThis.Click += btnClickThis_Click;
+            // 
+            // lblHelloWorld
+            // 
+            lblHelloWorld.AutoSize = true;
+            lblHelloWorld.Location = new Point(281, 94);
+            lblHelloWorld.Name = "lblHelloWorld";
+            lblHelloWorld.Size = new Size(50, 20);
+            lblHelloWorld.TabIndex = 1;
+            lblHelloWorld.Text = "label1";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(lblHelloWorld);
+            Controls.Add(btnClickThis);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button btnClickThis;
+        private Label lblHelloWorld;
     }
 }
